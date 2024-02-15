@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - We Translate</title>
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="./assets/css/vid-vid.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar" style="background: rgb(255,255,255);--bs-body-bg: #ffffff;">
+        <div class="container"><a class="navbar-brand logo" href="/home">We Translate</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="/home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/features">Features</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page registration-page">
+        <section class="clean-block clean-form dark">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">Video to Video Transliteration</h2>
+                    <p style="border-color: rgba(255, 255, 255, 0);color: rgb(32,92,152);"><br><span style="color: rgb(14, 14, 14);">Here from the video, we can translate the language to vernacular, and we convert the translated text into audio and it merged in video.</span><br><br></p>
+                </div>
+                <form action ='/transvideo-to-video' method="POST" enctype="multipart/form-data" style="border-top-color: rgb(224,226,228);box-shadow: 0px 1px 8px;">
+                    <div class="col text-center">
+                    <div id="upload-button" class="button">Upload Video</div>
+                    </div><br>
+                    <div id="upload-input">
+                      <input id="video_file" name="file" type="file">
+                    </div><br>
+                    <div class="row">
+                        <div class="col text-center">
+                            <label for="language">Choose a language:</label>
+                            <select name="language" id="language">
+                                <option value="Tamil">Tamil</option>
+                                <option value="Malayalam">Malayalam</option>
+                                <option value="Hindi">Hindi</option>
+                                <option value="Bengali">Bengali</option>
+                                <option value="Kannada">Kannada</option>
+                                <option value="Gujarati">Gujarati</option>
+                            </select>
+                        </div>
+                    </div><br>
+                    <div class="col text-center"><input type="submit" value="Translate"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer dark">
+        <div class="container">
+        </div>
+        <div class="footer-copyright">
+            <p>©Designed by HALAQAT for We Translate.</p>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
+    <script src="assets/js/vanilla-zoom.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>

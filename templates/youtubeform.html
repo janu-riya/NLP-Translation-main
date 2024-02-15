@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - We Translate</title>
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="./assets/css/txt-txt.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar" style="background: rgb(255,255,255);--bs-body-bg: #ffffff;">
+        <div class="container"><a class="navbar-brand logo" href="/home">Home - We Translate</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="/home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/features">Features</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="page registration-page">
+        <section class="clean-block clean-form dark">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">Youtube Transcript Translation</h2>
+                    <p style="border-color: rgba(255, 255, 255, 0);color: rgb(32,92,152);"><br><span style="color: rgb(14, 14, 14);">Here you can translate the English medium to vernacular languages, and vernacular language to English medium.</span><br><br></p>
+                </div>
+                <form  action = '/youtube-youtube' method="POST" style="border-top-color: rgba(244, 241, 241, 0.142);box-shadow: 3px 5px 10px; background: rgb(244, 221, 221);">
+                    <label for="fname">Youtube URL :</label><br>
+                    <br><br>
+                    <input type="text" id="fname" name="url" value=""><br><br><br>
+                <SELECT NAME="language">
+                    <OPTION VALUE="no" SELECTED>Select Language
+                    <OPTION VALUE="Tamil">Tamil
+                    <OPTION VALUE="Telugu">Telugu
+                    <OPTION VALUE="Malayalam">Malayalam
+                    <OPTION VALUE="Urdu">Urdu
+                    <OPTION VALUE="Kannada">Kannada
+                    <OPTION VALUE="Hindi">Hindi
+            
+                </SELECT><br><br><br>
+                    <input type="submit" value="Translate">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer dark">
+        <div class="container">
+        </div>
+        <div class="footer-copyright">
+            <p>©Designed by HALAQAT for We Translate.</p>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
+    <script src="assets/js/vanilla-zoom.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
